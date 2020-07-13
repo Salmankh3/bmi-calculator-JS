@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My BMI Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id="f">
+            <fieldset id="field">
+                <legend id="leg">BMI Calculator</legend>
+                <div id="guide">
+                    <h3>BMI Guide</h3>
+                    <p>Less than 18.6 = Weak Body</p>
+                    <p>Between 18.6 and 24.9 = Normal and Healthy</p>
+                    <p>Greater than 24.9 = Overweighted</p>
+                </div>
+                <br>
+                <div>
+                    <p><label>Enter Weight : <input type= "text" placeholder="Enter your Weight in KG" id="weight"></label></p><br>
+                    <p><label>Enter Height : <input type= "text" placeholder="Enter your Height in cm" id="height"></label></p><br>
+                    <input id = "button" type = "button" value = "Calculate" onclick = "bmi_calc();">
+                </div>
+            </fieldset>
+            <p style="font-weight: bold;">Result: <span style="font-weight: lighter;"id="result"></span></p>
+            <p id="comment"></p>
+        </form>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
